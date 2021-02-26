@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="calculator" class="card">
+            <h1 class="text-center">Tip Calculator</h1>
+            <form>
+                <div>
+                    <p>Enter Your Bill Here
+                        $<input id="bill_amount" type="text" placeholder="  Enter here">
+                </div>
+                <div>
+                    <p> How was the Service
+                        <select id="select_tip">
+                            <option disabled selected value="0">-- Choose an Option --</option>
+                            <option value="0.5">Excelent 50%</option>
+                            <option value="0.3">Very Good 50%</option>
+                            <option value="0.2">Fair 20%</option>
+                            <option value="0.12">Good Enough 12%</option>
+                            <option value="0.05">Not Greate 5%</option>
+                        </select>
+                </div>
+                <div>
+                    <p> How Many People on the Bill
+                        <input id="bill_people" type="text" placeholder=" No of people">
+                </div>
+            </form>
+            <button id="submit" class="btn btn-danger" type="button">Calculate</button>
+            <div>
+                <div id="tip_total" Style="display:none" class="text-center ">
+                    $<span id="ammount_cal">0.00</span>
+                    <small id="peoples" style="display:none;">Each</small>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="tipcalculator.js"></script>
+</body>
+
+</html>
