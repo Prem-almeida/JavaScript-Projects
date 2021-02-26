@@ -1,7 +1,3 @@
-# LolCat
-Simple Javascript project demonstrating Dom manipulation just for practice
+# Readme
 
-
-https://prem-almeida.github.io/LolCat/
-
-
+Some Projects i made for my own learning 
